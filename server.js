@@ -41,7 +41,7 @@ app.get('/users/age',function(req,res){
 	}
 
 	//returning the result
-	res.send(result);
+	res.json(result);
 
 	});
 });
@@ -81,8 +81,8 @@ app.get('/users/loc',function(req,res){
 		}
 	}
 	//return result to client
-	res.send(result);
-	});
+	res.json(result);
+	})
 });
 
 
@@ -123,7 +123,7 @@ app.get('/users/:param1',function(req,res){
 			}
 		}
 		//return result to client. Null if not found, as should be expected.
-		res.send(found);
+		res.json(found);
 
 		});
 	}
